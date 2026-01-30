@@ -1,0 +1,83 @@
+:root {
+  /* La couleur exacte du site Upreach */
+  --upreach-green: #15d485;
+  --upreach-dark: #050505;
+  --upreach-card: #111111;
+  --upreach-border: #222222;
+  --upreach-color: hsl(161, 63%, 18%);
+  --upreach-text: #ffffff;
+  --upreach-greene: #375c6b;
+}
+/* Pour remplacer text-success */
+.text-neon {
+  color: var(--upreach-green) !important;
+}
+
+/* Pour remplacer bg-success */
+.bg-neon {
+  background-color: var(--upreach-green) !important;
+  color: #000 !important;
+  /* Important: Texte noir sur fond néon */
+}
+.bg-neon-upreach-dark {
+  background-color: var(--upreach-color) !important;
+  color: var(--upreach-text) !important;
+}
+
+/* Pour les bordures lumineuses */
+.border-neon {
+  border: 1px solid var(--upreach-green) !important;
+}
+.btn-neon {
+  background-color: var(--upreach-green);
+  color: #000;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+}
+
+.btn-neon:hover {
+  /* Ajoute un effet de néon au survol */
+  box-shadow: 0 0 20px rgba(176, 255, 51, 0.4);
+  transform: translateY(-2px);
+}
+.btn-neonen {
+  background-color: var(--upreach-greene);
+  color: #000;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.3s ease;
+}
+/* Le wrapper qui contient les deux groupes */
+.marquee-wrapper {
+  display: flex;
+  width: max-content;
+  /* Très important pour ne pas écraser les éléments */
+}
+
+/* L'animation sur chaque groupe */
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  animation: scroll-loop 40s linear infinite;
+  /* 20s = vitesse */
+}
+
+/* L'étape magique */
+@keyframes scroll-loop {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+.marquee-container {
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
