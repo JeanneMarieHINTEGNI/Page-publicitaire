@@ -9,10 +9,16 @@ import Chaine_3 from './Images/Chaine_3.jpeg';
 import Complet from './Images/Complet.jpeg';
 import Complet_2 from './Images/Complet 2.jpeg';
 import Parure from './Images/Parure.jpeg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Work = () => {
+  useEffect(() =>{
+    AOS.init({duration:1000});
+  },[]);
   return (
-    <Container className='d-flex flex-column align-items-center justify-content-center text-center bg-light' style={{height:'750px'}}>
+    <Container className='d-flex flex-column align-items-center justify-content-center text-center bg-light' style={{height:'750px'}} data-aos="fade-up">
       <h1>Success You Can See</h1>
       <p className=' fs-5'>A glimpse into our most impactful projects and success stories.</p>
       <div className="marquee-container overflow-hidden bg-transparent mt-5 w-100 py-2" style={{marginLeft:'50px'}}>

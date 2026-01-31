@@ -1,13 +1,10 @@
 import React from 'react'
-import { Carousel, Container } from 'react-bootstrap'
+import { Card, Col, Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Collier from './Images/Collier.jpeg';
-import Bijoux from './Images/Bijoux.jpeg';
-import Bijoux2 from './Images/Bijoux2.jpeg';
 
 const Services = () => {
   return (
-    <Container className='d-flex flex-column align-items-center justify-content-center text-center'
+    <Container className='d-flex flex-column align-items-center justify-content-center text-center bg-light'
     style={{ 
         minHeight: '80vh',
         minWidth: '100%',
@@ -16,55 +13,74 @@ const Services = () => {
         justifyContent: 'center',
         alignItems: 'center'
       }}>
-      <h1>Success You Can See</h1>
-      <p className=' fs-5'>A glimpse into our most impactful projects and success stories.</p>
-       <Carousel data-bs-theme="dark"
-        controls={false}     // Enlève les flèches (précédent/suivant)
-        indicators={true}    // Garde les petits traits en bas (optionnel, mettre false pour tout enlever)
-        interval={1000}      // Vitesse de défilement (3000ms = 3 secondes)
-        pause={false} 
-        >
-      <Carousel.Item>
-        <img
-          className="d-block w-100 "
-          src={Collier}
-          alt="Première diapositive"
-          style={{ objectFit: 'cover', height: '500px', borderRadius:'50px' }} // Optionnel : pour ajuster la taille
-        />
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={Bijoux}
-          alt="Second slide"
-          style={{ objectFit: 'cover', height: '500px', borderRadius:'50px' }} // Optionnel : pour ajuster la taille
-        />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 "
-          src={Bijoux2}
-          alt="Third slide"
-          style={{ objectFit: 'cover', height: '500px', borderRadius:'50px' }} // Optionnel : pour ajuster la taille
+        <Row>
+          <Col  data-aos="fade-up">
+      <h1>What we offer</h1>
+      <p className=' fs-5'>Comprehensive solutions for business success.</p>
+      </Col>
+      </Row>
+      <Row className='g-5 d-flex justify-content-center mt-4' style={{width:'90%'}}>
+        <Col>
+         <Card className='bg-light text-dark text-start' style={{height:'250px', width:'400px', borderRadius:'25px'}} data-aos="fade-up">
+         <Card.Body>
+          <h4>Digital Marketing</h4> 
+Maximize online visibility with paid ads, social media, and strategic SEO to drive targeted traffic and higher conversions.
+         </Card.Body>
 
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+         </Card>
+        </Col>
 
-    </Carousel>
+        <Col>
+        <Card className='bg-light text-dark text-start' style={{height:'250px', width:'400px', borderRadius:'25px'}} data-aos="fade-up">
+         <Card.Body>
+          <h4>Business Consulting</h4> 
+Enhance business strategy, optimize core processes, and leverage real-time analytics for sustainable growth.
+         </Card.Body>
+
+         </Card>
+        </Col>
+
+        <Col>
+        <Card className='bg-light text-dark text-start' style={{height:'250px', width:'400px', borderRadius:'25px'}} data-aos="fade-up">
+         <Card.Body>
+          <h4>Lead Generation</h4> 
+Optimize advanced funnels, automate processes, and boost customer conversions to generate leads.
+         </Card.Body>
+
+         </Card>
+        </Col>
+
+        <Col>
+        <Card className='bg-light text-dark text-start' style={{height:'250px', width:'400px', borderRadius:'25px'}} data-aos="fade-up">
+         <Card.Body>
+          <h4>Brand Strategy</h4> 
+Building a powerful, data-driven brand identity that resonates, inspires, and drives long-term success.
+         </Card.Body>
+
+         </Card>
+        </Col>
+
+        <Col>
+        <Card className='bg-light text-dark text-start' style={{height:'250px', width:'400px', borderRadius:'25px'}} data-aos="fade-up">
+         <Card.Body>
+          <h4>Content Writing</h4> 
+Crafting compelling, SEO-optimized content that boosts engagement, authority, and conversions.
+         </Card.Body>
+
+         </Card>
+        </Col>
+
+        <Col>
+        <Card className='bg-light text-dark text-start' style={{height:'250px', width:'400px', borderRadius:'25px'}} data-aos="fade-up">
+         <Card.Body>
+          <h4>Strategic Planning</h4> 
+Generate high-quality leads through targeted campaigns and optimized funnels for maximum conversions.
+         </Card.Body>
+
+         </Card>
+        </Col>
+      </Row>
+       
     </Container>
   )
 }

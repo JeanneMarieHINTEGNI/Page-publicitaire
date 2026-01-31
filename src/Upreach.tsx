@@ -1,21 +1,23 @@
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import Geminiimage from './Images/Geminiimage.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const Upreach = () => {
+useEffect(() =>{
+  AOS.init({duration:1000});
+},[]);
   return (
-    <Container className='bg-neon-upreach-dark text-white d-flex flex-column justify-content-space-between align-items-center px-5'  
+    <div >
+    <Container fluid className='bg-neon-upreach-dark text-white px-5'  
     style={{ 
-        minHeight: '80vh',
-        minWidth: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        
+        
         backgroundColor: '#050505', 
-        color: 'white',
-        padding : '50px 10%',
+       padding:'100px'
       }}>
         <Row className='d-flex w-100 mb-4'> 
-          <Col className='d-flex justify-content-center' xs={12} md={6} lg={8}>
+          <Col className='d-flex justify-content-center' xs={12} md={6} lg={8} data-aos="fade-up">
           <div style={{marginRight:'160px'}}>
             <h1 className='me-auto' style={{fontSize:"70px"}}>Grow your business, <br /> master every move.</h1>
        <p className='me-auto' style={{fontSize:"20px"}}>Helping businesses thrive with innovative digital strategies, <br /> creative solutions, and measurable outcomes.</p>
@@ -24,11 +26,11 @@ const Upreach = () => {
           </div>
           
           </Col>
-          <Col xs={12} md={6} lg={4} className='d-flex justify-content-center '>
-       <img src={Geminiimage} alt="Gemini Image" style={{height:'550px', width:'450px', borderRadius:'35px'}} />
+          <Col xs={12} md={6} lg={4} className='d-flex justify-content-center ' data-aos="fade-up">
+       <img className="img-fluid" src={Geminiimage} alt="Gemini Image" style={{height:'550px', width:'450px', borderRadius:'35px'}} />
           
           </Col>
-           <div className="marquee-container overflow-hidden bg-transparent mt-5 w-50 py-2" style={{marginLeft:'50px'}}>
+           <div className="marquee-container overflow-hidden bg-transparent mt-5 w-50 py-2" style={{marginLeft:'50px'}} data-aos="fade-up">
         <div className="d-flex marquee-wrapper">
         <div className="marquee-content d-flex align-items-center">
           <div className="marquee-item px-4 py-2  text-white rounded-pill mx-2">Logoipsum</div>
@@ -48,9 +50,21 @@ const Upreach = () => {
       </div>
           </div>
         </Row>
+        </Container>
+        <Row className='d-flex flex-column w-100 align-items-center justify-content-center text-center bg-light mt-5' 
+        style={{height:'750px',
+        }} data-aos="fade-up">
+          <Col>
+          <h1 style={{ fontSize: '50px' }}>At Upreach, we deliver real results through <br /> <span className="text-neon">high-converting marketing strategies </span> designed to
+           <br /> scale your business, attract the right audience, 
+           <br /> and<span className="text-neon"> maximize ROI with precision.</span> 
+           </h1>
+          </Col>
+        </Row>
           
       
-    </Container>
+    
+    </div>
   )
 }
 
