@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 const Blog = () => {
   return (
@@ -13,7 +13,47 @@ const Blog = () => {
         alignItems: 'center'
       }}
       >
-    Blog</Container>
+        <Row>
+          <Col className="d-flex justify-content-center align-items-center"> 
+          <h1>Expert insights & strategies for <span className="text-neon">growth</span> </h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          
+          </Col>
+
+          <Col>
+          
+          </Col>
+
+          <Col>
+          
+          </Col>
+
+          <Col>
+          
+          </Col>
+
+          <Col>
+          
+          </Col>
+
+          <Col>
+          
+          </Col>
+        </Row>
+        <Row>
+          
+          <Col></Col>
+         
+        </Row>
+        <Row>
+          <Col>
+          
+          </Col>
+        </Row>
+    </Container>
   )
 }
 

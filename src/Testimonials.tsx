@@ -15,7 +15,7 @@ const Testimonials = () => {
         justifyContent: 'center',
         alignItems: 'center'
       }}>
-        <Row className="text-center mb-5">
+        <Row className="text-center mt-5">
           <Col className='w-100'>
             <h1 style={{ fontSize: '50px' }}>What Our Clients Say</h1>
             <p style={{ fontSize: '1.3rem' }}>Our clients’ words reflect our commitment to excellence.</p>
