@@ -53,7 +53,7 @@ const letterVariants = {
        <p className='me-auto' style={{fontSize:"20px"}}>Helping businesses thrive with innovative digital strategies, <br /> creative solutions, and measurable outcomes.</p>
        <Button className='btn-neon text-Black me-auto' style={{borderRadius:"75px", width:"150px", height:"50px"}}>Book a call</Button>
        <Button className='btn-neonen text-white  me-auto ms-3' style={{borderRadius:"75px", width:"150px", height:"50px"}}>Learn more</Button>
-        <div className="marquee-container overflow-hidden bg-transparent mt-5  py-2" style={{marginLeft:'50px', width:"500px"}} data-aos="fade-up">
+        <div className="marquee-container overflow-hidden bg-transparent mt-5  py-px-52" style={{marginLeft:'50px', width:"500px"}} data-aos="fade-up">
         <div className="d-flex marquee-wrapper">
         <div className="marquee-content d-flex align-items-center">
           <div className="marquee-item px-4 py-2  text-white rounded-pill mx-2">Logoipsum</div>
@@ -83,7 +83,7 @@ const letterVariants = {
         </Row>
         </Container>
         <Container fluid className='bg-light'>
-        <Row className='d-flex flex-column w-100 align-items-center justify-content-center text-center bg-light mt-5' 
+        <Row className='d-flex flex-column align-items-center justify-content-center text-center bg-light mt-5' 
         style={{height:'750px',
         }} data-aos="fade-up">
           <Col>
