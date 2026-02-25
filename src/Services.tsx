@@ -1,4 +1,3 @@
-import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {CircleArrowUp, File, MessageSquare, Pen, Percent, Route} from 'lucide-react';
