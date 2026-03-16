@@ -41,12 +41,12 @@ const letterVariants = {
   };
   return (
     <div className="overflow-hidden">
-    <Container fluid className='bg-neon-upreach-dark text-white px-5'  
+    <Container fluid className='bg-neon-upreach-dark text-white '  
     style={{
         backgroundColor: '#050505', 
-       padding:'100px'
+       padding: '80px 20px'
       }}>
-        <Row className='d-flex w-100 mb-4'> 
+        <Row className='d-flex mb-4'> 
           <Col className='d-flex justify-content-center' xs={12} md={6} lg={8} data-aos="fade-up">
           <div style={{marginRight:'160px'}}>
             <h1 className='me-auto' style={{fontSize:"70px"}}>Grow your business, <br /> master every move.</h1>
@@ -86,7 +86,7 @@ const letterVariants = {
         <Row className='d-flex flex-column align-items-center justify-content-center text-center bg-light mt-5' 
         style={{height:'750px',
         }} data-aos="fade-up">
-          <Col>
+          <Col xs={12} md={10}>
            <motion.h1
       variants={containerVariants}
       initial="hidden"

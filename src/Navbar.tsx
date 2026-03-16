@@ -1,6 +1,8 @@
 import { Button, Container, Nav, Navbar as BootstrapNavbar } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { HashLink } from 'react-router-hash-link';
+
 import { useEffect } from 'react';
 const CustomNavbar = () => {
   useEffect(() =>{
@@ -34,7 +36,8 @@ const CustomNavbar = () => {
             marginRight:'330px'
           }}
         >
-          Contact us
+          <HashLink to="#contact" className="text-decoration-none text-dark">Contact us</HashLink>
+          
         </Button>
 
       </Container>

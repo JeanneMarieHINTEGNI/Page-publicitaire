@@ -10,6 +10,7 @@ import Blog from './Blog'
 import Footer from './Footer'
 import { BrowserRouter as Router } from 'react-router-dom';
 import Upreach from './Upreach'
+import Contact from './Contact'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <section id="testimonials"><Testimonials /></section>
         <section id="about"><About /></section>
         <section id="blog"><Blog /></section>
+        <section id="contact"><Contact /></section>
       </Container>
       <Footer />
     </Router>
